@@ -1,7 +1,7 @@
 <template>
-  <div class="m-5">
+  <div class="m-8">
     {{title}}:
-    {{context}}
+    {{text}}
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default Vue.extend({
       default: '',
       type: String
     },
-    context: {
+    text: {
       default: '',
       type: String
     },

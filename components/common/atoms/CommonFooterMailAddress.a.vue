@@ -1,5 +1,5 @@
 <template>
   <div>
-    <PrivateBodyO />
+    {{ $store.state.mailAddress }}
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="i in 4">
+    <div v-for="i in 4" :key="i.toString()">
       <AboutSubTitleA :num="num" />
     </div>
   </div>
@@ -12,8 +12,8 @@ export default Vue.extend({
   props: {
     num: {
       default: 0,
-      type: Number
-    }
-  }
+      type: Number,
+    },
+  },
 })
 </script>

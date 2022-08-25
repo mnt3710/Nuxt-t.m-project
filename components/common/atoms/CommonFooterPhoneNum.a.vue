@@ -1,5 +1,5 @@
 <template>
   <div>
-    -{{ $store.state.tabList[0] }}-
+    {{ $store.state.phoneNum }}
   </div>
 </template>

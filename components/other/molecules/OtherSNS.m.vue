@@ -1,5 +1,9 @@
 <template>
   <div>
-    ghienldksn
+    <CommonBodyTitleA />
+    <OtherSubTitleA />
+    <OtherQuestionTitleA />
+    <OtherQuestionBoxA />
+    <OtherQuestionBtnA />
   </div>
 </template>

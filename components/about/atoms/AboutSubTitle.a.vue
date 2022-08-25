@@ -1,22 +1,15 @@
 <template>
-  <div>
-    &lt;{{text}}&gt;
-  </div>
+  <div>&lt;{{ $store.state.subTitle[num] }}&gt;</div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  props:{
+  props: {
     num: {
       default: 0,
-      type: Number
-    }
+      type: Number,
+    },
   },
-  computed: {
-    text() {
-      return this.$store.state.subTitle[this.num]
-    }
-  }
 })
 </script>

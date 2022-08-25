@@ -1,6 +1,3 @@
 <template>
-  <div>
-    <CommonHeaderO />
-    <AboutBodyO />
-  </div>
+  <AboutBodyO />
 </template>

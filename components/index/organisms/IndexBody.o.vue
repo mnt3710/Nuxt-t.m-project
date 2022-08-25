@@ -1,6 +1,6 @@
 <template>
   <div>
-    <IndexExplainA />
+    <IndexExplainA class="mb-20" />
     <IndexBtnA />
   </div>
 </template>
