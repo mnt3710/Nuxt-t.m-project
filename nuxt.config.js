@@ -1,4 +1,5 @@
 export default {
+  mode: 'spa',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'newPortfolio',
@@ -11,7 +12,13 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400&family=Amatic+SC&family=Caveat&family=Homemade+Apple&family=Megrim&family=Permanent+Marker&family=Poiret+One&family=Reenie+Beanie&family=Rubik+Iso&family=Silkscreen&family=Qwitcher+Grypen&display=swap',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -29,11 +36,21 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/axios'],
+
+  axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: { hardSource: true },
+
+  googleFonts: {
+    display: 'swap',
+    families: {
+      'Qwitcher Grypen': true,
+    },
+  },
 }
