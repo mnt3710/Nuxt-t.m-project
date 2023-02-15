@@ -1,3 +1,3 @@
 <template>
-  <p class="flex justify-center font-permanent-marker">mail adress</p>
+  <p class="flex justify-center">mail adress</p>
 </template>
