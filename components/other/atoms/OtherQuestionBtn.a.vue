@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="alertLog('')">submit</button>
+    <button>submit</button>
   </div>
 </template>
 
@@ -8,10 +8,6 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  methods: {
-    alertLog(text: string) {
-      alert(text)
-    },
-  },
+  methods: {},
 })
 </script>
