@@ -1,6 +1,7 @@
 <template>
   <div>
     <IndexTemplateT />
+    <AboutTemplateT />
   </div>
 </template>
 
@@ -12,16 +13,6 @@ export default Vue.extend({
       host: 'host Name',
     }
   },
-  /* methods: {
-    async sendRequest() {
-      const response = await this.$axios.$get('https://httpbin.org/get')
-      this.accept = response.headers.Accept
-    },
-    async asyncData({ app }) {
-      const response = await app.$axios.$get('https://httpbin.org/get')
-      return { host: response.headers.Host }
-    },
-  }, */
 })
 </script>
 
